@@ -68,7 +68,7 @@ body{
 /*-------------------------
     #SECTION-HEADER
 ----------------------*/
-section{
+header{
   padding-top: 67px;
   height: 847px;
   background: url("../img/bg-header.jpg") center top no-repeat;
@@ -78,7 +78,8 @@ section{
   max-width: 960px;
   margin: 0 auto;
 }
-header{
+.header-top{
+  height: 210px;
 }
 .logo{
   display: inline-block;
@@ -111,6 +112,7 @@ text-transform: uppercase;
 }
 .navigate{
   float: right;
+  overflow: hidden;
 }
 .navigate ul{
   font-size: 0;
@@ -133,9 +135,48 @@ text-transform: uppercase;
   padding: 8px 5px 2px;
   display: block;
   text-decoration: none;
-  text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
   color: #fff;
 }
 .navigate--item a:hover{
   border-bottom: 2px solid #edbfff;
+}
+.slider{
+  height: 400px;
+  background: rgba(0,0,0, 0.2);
+}
+.wrapper-slider-960{
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100%;
+
+}
+.slider-txt-wrap{
+  display: inline-block;
+  width: 54%;
+  margin-top:8.3333%;
+  overflow: hidden;
+
+}
+.slider--title-bg{
+color: #fefefe;
+font-size: 60px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.slider--title-sm{
+  color: #edbfff;
+  font-size: 32px;
+  line-height: 36px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.slider--txt{
+  line-height: 24px;
+  font-family:"Open Sans Light",Sans-Serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.slider--img{
+  display: inline-block;
+  width: 40%;
 }
