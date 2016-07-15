@@ -70,8 +70,11 @@ body{
 ----------------------*/
 header{
   padding-top: 67px;
-  height: 847px;
+  height: 845px;
   background: url("../img/bg-header.jpg") center top no-repeat;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
 }
 .wrapper960{
@@ -149,6 +152,7 @@ text-transform: uppercase;
   max-width: 960px;
   margin: 0 auto;
   height: 100%;
+  position: relative;
 
 }
 .slider-txt-wrap{
@@ -178,5 +182,110 @@ font-size: 60px;
 }
 .slider--img{
   display: inline-block;
-  width: 40%;
+  height:100%;
+  margin-left: 9.37%;
+}
+
+.slider--img img{
+  /*vertical-align: middle;*/
+}
+
+.iphone{
+  position: absolute;
+  right: 7.2%;
+  top: -4%;
+}
+.slider--control{
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: right;
+  padding: 94px 339px 0 0;
+}
+
+.slider--control input{
+  display: none;
+}
+
+.slider--control label{
+  cursor: pointer;
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: black;
+  opacity: 0.3;
+
+}
+.slider--control label:hover{
+  border: 3px solid rgba(255,255,255,1);
+  background-clip: content-box;
+}
+
+.slider--control .active{
+  opacity: 1;
+  background: white;
+  border: 3px solid rgba(0,0,0,0.3);
+  background-clip: content-box;
+}
+
+.about{
+  height: 342px;
+  background-image: linear-gradient(to top, #322539 0%, #745083 100%);
+  border-top: 1px solid #33253a;
+  font-family: "League Gothic";
+  color: #fff;
+  font-weight: 400;
+}
+
+.about-company{
+  max-width:960px;
+  margin: 0 auto;
+}
+
+.about-company--item{
+  display: inline-block;
+  width:30%;
+}
+
+.about-company--item i{
+  display: inline-block;
+  background: url("../img/about-sprite.png") 0 0 no-repeat;
+  width: 27px;
+  height: 27px;
+
+}
+.about-company--item p{
+  /*width: 223px;*/
+  /*height: 113px;*/
+  text-shadow: 0.5px 0.9px 0 #0f1518;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.about-company--item h2{
+  /*width: 173px;*/
+  /*height: 24px;*/
+  text-shadow: 0.5px 0.9px 0 #0f1518;
+  font-size: 30px;
+
+  /*line-height: 24px;*/
+}
+
+
+.about-company--item a {
+  /*width: 56px;*/
+  /*height: 14px;*/
+  /*text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);*/
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  /*font-weight: 400;*/
+}
+.about-company--item a:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+
 }
