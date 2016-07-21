@@ -77,6 +77,8 @@ header {
 .wrapper960 {
   max-width: 960px;
   margin: 0 auto;
+  /*position: relative;*/
+  /*height: 100%;*/
 }
 
 .header-top {
@@ -173,7 +175,7 @@ header {
 
 .slider--title-bg {
   color: #fefefe;
-  font-size: 60px;
+  font-size: 58px;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -194,12 +196,17 @@ header {
 
 .slider--img {
   display: inline-block;
-  height: 100%;
+  /*height: 100%;*/
   margin-left: 9.37%;
 }
 
 .slider--img img {
   /*vertical-align: middle;*/
+}
+
+.iphone-blur{
+  display: inline-block;
+  margin: 0px 0 -11px 6px;
 }
 
 .iphone {
@@ -275,6 +282,7 @@ header {
   content: "";
   width: 100%;
 }
+
 .about-company--item {
   text-align: left;
   position: relative;
@@ -282,9 +290,10 @@ header {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 32%;
+  width: 29.5%;
   padding-left: 6.77%;
-  margin-right: -23px;
+  /*max-height: 220px;*/
+  /*margin-right: -23px;*/
 
 }
 
@@ -338,7 +347,7 @@ header {
   font-size: 18px;
   text-decoration: none;
   color: #fff;
-  margin: 19px 27px 0 0;
+  /*margin: 19px 27px 0 0;*/
 }
 
 .about-company--item a:hover {
@@ -688,4 +697,72 @@ footer p{
 }
 footer p b{
   font-weight: 700;
+}
+
+
+/*-------------------------
+    #SECTION-MEDIA
+----------------------*/
+
+@media screen and (max-width: 768px) {
+  header{
+    height:797px;
+  }
+  .wrapper960{
+    padding: 0 20px;
+  }
+  .header-top{
+    height: 176px;
+  }
+  .logo{
+    float: none;
+    margin-bottom: 20px;
+  }
+  .navigate{
+    float: none;
+  }
+  .wrapper-slider-960{
+    padding: 0 20px;
+  }
+  .iphone{
+    right: 3.8%;
+    top: -5.4%;
+  }
+  .iphone-blur{
+    margin: 0 0 -41px -47px;
+  }
+  .slider-txt-wrap {
+    margin-top: 14.0%;
+    padding-left: 3.6%;
+  }
+  .slider--title-bg {
+    font-size: 47px;
+    margin-bottom: 2px;
+  }
+  .slider--title-sm {
+    font-size: 24px;
+  }
+  .slider--txt {
+    line-height: 26px;
+    font-size: 16px;
+    height: 100px;
+    overflow: hidden;
+    max-width: 300px;
+  }
+  .slider--control {
+    padding: 36px 128px 0 0;
+  }
+  .about-company {
+    padding-top: 11%;
+  }
+  .about-company--item h2 {
+    font-size: 24px;
+  }
+  .about-company--item p {
+    max-height: 150px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 0;
+    overflow: hidden;
+  }
 }
