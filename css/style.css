@@ -992,6 +992,30 @@ footer p b {
   .header-top {
     height: 136px;
   }
+  .navigate-top ul{
+    /*position: absolute;*/
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+    width: 247px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 20;
+    border-radius: 10px;
+  }
+  .navigate-top ul:hover{
+    height: 259px;
+    opacity: 0.9;
+    background-color: #36293e;
+    border: 1px solid #051116;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  .navigate-top .navigate--item{
+    display: block;
+  }
+  /*.navigate--item:hover{*/
+    /*opacity: 0.3;*/
+  /*}*/
   .slider {
     height: 245px;
      }
