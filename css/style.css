@@ -371,12 +371,15 @@ header {
 }
 
 .slider--mini p {
+  overflow: hidden;
+  max-height: 195px;
   margin-top: 13px;
   color: #454545;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 300;
   text-shadow: 1px 1px 0 #fff;
+
 }
 
 .slider--mini:after {
@@ -1156,7 +1159,6 @@ footer p b {
   }
 
   .slider--mini p {
-    overflow: hidden;
     max-height: 165px;
     margin-top: 4px;
   }
