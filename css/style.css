@@ -966,7 +966,7 @@ footer p b {
   }
 
   .navigate--top .navigate__item:hover a {
-    padding: 9px 0 7px;
+    /*padding: 9px 0 7px;*/
     background: #29212f;
   }
 
